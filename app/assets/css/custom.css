@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("../fonts/GmarketSansLight.otf");
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("../fonts/GmarketSansMedium.otf");
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("../fonts/GmarketSansBold.otf");
+}
+
+* {
+  font-family: "GmarketSansLight" !important;
+}
+
+#custom_loginOptions {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../images/custom/bg_login.png);
+  background-size: cover;
+}
+
+#loginOptionMicrosoft {
+  position: absolute;
+  top: 60.5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  aspect-ratio: 250 / 60;
+  width: 192px;
+  border: none;
+  border-radius: 500px;
+
+  background-image: url(../images/custom/btn_login.png);
+  background-size: cover;
+
+  cursor: pointer;
+}
+#loginOptionMicrosoft:hover {
+  filter: brightness(1.4);
+}
+
+
+
+#custom_landing {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../images/custom/bg_landing.png);
+  background-size: cover;
+}
+
+#avatarContainer {
+  display: inline-block;
+
+  height: 4.5vh;
+  aspect-ratio: 1 / 1;
+
+  background-size: 100%;
+  filter: drop-shadow(1px 1px 1px #000a);
+}
+
+#landing_custom_user {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%);
+}
+
+#user_text {
+  display: inline-block;
+
+  color: #2e7573;
+  mix-blend-mode: difference;
+  font-family: "GmarketSansMedium" !important;
+  font-weight: bold;
+  font-size: 15px;
+
+  transform: translateY(-6px);
+}
+
+#landing_custom_nav {
+  position: absolute;
+  top: 2.9%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#landing_custom_nav * {
+  display: inline-block;
+  height: 38px;
+  
+  background-size: cover;
+  cursor: pointer;
+}
+
+#landing_custom_nav *:not(:last-child) {
+  margin-right: 33px;
+}
+
+#custom_landingContainer {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(../images/custom/bg_landing.png);
+  background-size: cover;
+}
+
+#custom_nav_cafe {
+  background-image: url("../images/custom/btn_cafe.png");
+  aspect-ratio: 50 / 50;
+}
+
+#custom_nav_discord {
+  background-image: url("../images/custom/btn_discord.png");
+  aspect-ratio: 50 / 50;
+}
+
+#settingsMediaButton {
+  background-image: url("../images/custom/btn_settings.png");
+  aspect-ratio: 50 / 50;
+}
+
+#custom_launch_content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 18%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 258 / 68;
+  width: 198px;
+  border: none;
+}
+
+#launch_button {
+  aspect-ratio: 258 / 68;
+  width: 198px;
+
+  background-image: url(../images/custom/btn_launch.png);
+  background-size: cover;
+  border-radius: 100px;
+
+  cursor: pointer;
+  transition: transform 0.15s ease-out, filter 0.15s linear;
+}
+
+#launch_button:hover {
+  transform: rotateX(22deg);
+  filter: drop-shadow(0px 4px 3px #155050) brightness(1.15);
+}
+
+#launch_loading {
+  aspect-ratio: 258 / 48;
+  height: 37px;
+
+  background-image: url(../images/custom/loading_empty.png);
+  background-size: cover;
+  border-radius: 100px;
+}
+
+#launch_loading_mask {
+  --progress: 0;
+
+  height: 30px;
+  width: calc(190px * var(--progress));
+
+  background-image: url(../images/custom/loading_mask.png);
+  background-size: cover;
+  border-radius: 100px;
+}
