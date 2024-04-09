@@ -168,8 +168,8 @@
 #launch_loading_mask {
   --progress: 0;
 
-  height: 30px;
-  width: calc(190px * var(--progress));
+  height: 37px;
+  width: calc(198px * var(--progress));
 
   background-image: url(../images/custom/loading_mask.png);
   background-size: cover;

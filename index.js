@@ -232,7 +232,7 @@ function createWindow() {
             preload: path.join(__dirname, 'app', 'assets', 'js', 'preloader.js'),
             nodeIntegration: true,
             contextIsolation: false,
-            devTools: true
+            devTools: false
         },
         backgroundColor: '#171614'
     })
@@ -247,7 +247,7 @@ function createWindow() {
     })*/
 
     win.removeMenu()
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 
     // win.resizable = true
 
