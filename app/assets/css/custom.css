@@ -73,7 +73,7 @@
 #user_text {
   display: inline-block;
 
-  color: #2e7573;
+  color: #a1e7e5;
   mix-blend-mode: difference;
   font-family: "GmarketSansMedium" !important;
   font-weight: bold;
@@ -128,7 +128,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 18%;
+  bottom: 17.6%;
 
   display: flex;
   align-items: center;
@@ -174,4 +174,60 @@
   background-image: url(../images/custom/loading_mask.png);
   background-size: cover;
   border-radius: 100px;
+}
+
+#custom_notify {
+  position: absolute;
+  bottom: 40px;
+  left: 15px;
+  display: inline-block;
+  width: 269px;
+  height: 76px;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+#custom_notify > .naver-article {
+  margin-bottom: 1px;
+
+  background-color: #355b80;
+
+  transition: filter 0.3s ease-out;
+  cursor: pointer;
+}
+#custom_notify > .naver-article:nth-child(2n - 1) {
+  background-color: #254c74;
+}
+
+#custom_notify > .naver-article:hover {
+  filter: brightness(1.4);
+}
+
+#custom_notify > .naver-article > .naver-article__title {
+  display: inline-block;
+  width: 149px;
+  height: 17px;
+  padding-top: 2px;
+  padding-left: 10px;
+
+  font-family: "GmarketSansMedium" !important;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#custom_notify > .naver-article > .naver-article__content {
+  display: inline-block;
+  width: 107px;
+  height: 17px;
+  padding-top: 2px;
+
+  font-size: 12px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  opacity: 0.7;
 }
